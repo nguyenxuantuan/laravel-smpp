@@ -5,9 +5,32 @@ This package is a tiny wrapper for the [onlinecity/php-smpp](https://github.com/
 It provides a basic SMPP interface and implementation for the Laravel framework.
 
 ## Installation
+Edit file composer.json
+```json
+{
+    "require": {
+        "tuannx/laravel-smpp": "^1.0",
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "tuannx/laravel-smpp",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/nguyenxuantuan/laravel-smpp.git",
+                    "type": "git",
+                    "reference": "master",
+                }
+            }
+        }
+    ]
+}
+```
+
 You can install Laravel SMPP using Composer command:
 ```bash
-$ composer require franzose/laravel-smpp
+$ composer require tuannx/laravel-smpp
 ```
 
 Then you need to add `LaravelSmpp\LaravelSmppServiceProvider::class` to your providers array in the `config/app.php`

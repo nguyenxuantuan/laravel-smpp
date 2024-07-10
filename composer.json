@@ -1,11 +1,11 @@
 {
-  "name": "franzose/laravel-smpp",
+  "name": "tuanx/laravel-smpp",
   "description": "SMS sending via SMPP protocol for Laravel framework.",
   "keywords": ["sms", "smpp", "laravel", "onlinecity"],
   "authors": [
     {
-      "name": "Jan Iwanow",
-      "email": "iwanow.jan@gmail.com"
+      "name": "TuanLX",
+      "email": "tuanLx@gmail.com"
     }
   ],
   "require": {
