@@ -11,6 +11,7 @@ use SmppAddress;
 use SmppClient;
 use SmppException;
 use SocketTransport;
+use GsmEncoder;
 
 /**
  * SMPP implementation of the SMS sending service.
@@ -225,9 +226,9 @@ class SmppService implements SmppServiceInterface
      */
     protected function sendSms(SmppAddress $sender, $recipient, $message)
     {
-        $message = mb_convert_encoding($message, 'UCS-2', 'utf8');
-
-        return $this->smpp->sendSMS($sender, $this->getRecipient($recipient), $message, null, SMPP::DATA_CODING_UCS2);
+        // $message = mb_convert_encoding($message, 'UCS-2', 'utf8');
+        $message = GsmEncoder::utf8_to_gsm0338($message);
+        return $this->smpp->sendSMS($sender, $this->getRecipient($recipient), $message, null);
     }
 
     /**
