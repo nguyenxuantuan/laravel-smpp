@@ -1,5 +1,5 @@
 {
-  "name": "tuannx/laravel-smpp",
+  "name": "tuanx/laravel-smpp",
   "description": "SMS sending via SMPP protocol for Laravel framework.",
   "keywords": ["sms", "smpp", "laravel", "onlinecity", "gsm_endcode"],
   "authors": [

@@ -7,7 +7,7 @@ It provides a basic SMPP interface and implementation for the Laravel framework.
 ## Installation
 You can install Laravel SMPP using Composer command:
 ```bash
-$ composer require tuannx/laravel-smpp
+$ composer require tuanx/laravel-smpp
 ```
 
 Then you need to add `LaravelSmpp\LaravelSmppServiceProvider::class` to your providers array in the `config/app.php`
